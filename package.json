@@ -11,7 +11,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "csv-parse": "^5.2.0",
     "next": "12.1.6",
+    "node-fetch": "^3.2.6",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
