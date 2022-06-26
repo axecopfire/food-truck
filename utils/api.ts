@@ -3,8 +3,8 @@ import fetch from "node-fetch";
 import { parse as csvParse } from "csv-parse/sync";
 import { Buffer } from "buffer";
 
-type FoodTruck = { [key: string]: string };
-type FoodTrucks = FoodTruck[];
+export type FoodTruck = { [key: string]: string };
+export type FoodTrucks = FoodTruck[];
 
 export const bingMapsUrlBuilder = (middle: string) =>
   `https://dev.virtualearth.net/REST/v1/${middle}&key=${process.env.MAPS_KEY}`;

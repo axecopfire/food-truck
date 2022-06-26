@@ -16,5 +16,5 @@ export default async function handler(
   }
   const closestFoodTrucks = await get5ClosestFoodTrucks(queryLat, queryLong);
 
-  res.status(200).send({ trucks: closestFoodTrucks });
+  res.status(200).send(closestFoodTrucks);
 }

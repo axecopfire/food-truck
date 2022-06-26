@@ -17,5 +17,6 @@ export default async function handler(
   const closestFoodTrucks = await get5ClosestFoodTrucks(queryLat, queryLong);
 
   const map = await buildMap(queryLat, queryLong, closestFoodTrucks);
+
   res.status(200).send(map);
 }
