@@ -95,7 +95,9 @@ export const getDistanceByLatLong = (
 export const buildPushPinsString = (trucks: FoodTrucks) =>
   trucks.reduce((acc: string, truck: any, position: number) => {
     if (position > 18) return "";
-    return (acc += `&pushpin=${truck.Latitude},${truck.Longitude};129;${position}`);
+    return (acc += `&pushpin=${truck.Latitude},${truck.Longitude};129;${
+      position + 1
+    }`);
   }, "");
 
 /**

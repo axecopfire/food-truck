@@ -21,22 +21,25 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ## [API routes](https://nextjs.org/docs/api-routes/introduction)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages. These routes automatically get deployed to Vercel as serverless functions.
+
+### Functionality
 
 - `/api/getMap` returns a Map with pins of closest 5 food trucks in San Francisco
 - `/api/getTrucks` returns a JSON of closest 5 food trucks in San Francisco
 
-## Learn More about Next.js
+## Vercel Deployments
 
-To learn more about Next.js, take a look at the following resources:
+This app is deployed to [Vercel](https://vercel.com).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Every push to the `main` branch deploys a new version to production. For deploy previews you can submit Pull Request to `main` and Vercel will deploy a custom build for that branch.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can check for green check marks to see that it successfully deployed.
 
-## Deployed on Vercel
+![green check marks on github means successful deployment](./public/images/green-check.PNG)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Click on the details to find out more about that deployment.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## FAQ
+
+For more detailed information be sure to check out this project's Wiki and please feel free to submit questions as `issues`.
